@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, Clock, Zap } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
+import appMockup1 from "@/assets/app-mockup-1.jpg";
+import appMockup2 from "@/assets/app-mockup-2.jpg";
 
 const HeroSection = () => {
   return (
@@ -36,8 +38,10 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Button variant="hero" size="lg" className="group">
-                Start Scheduling Magically
+              <Button variant="hero" size="lg" className="group" onClick={() => {
+                window.open('https://apps.apple.com/app/prsm', '_blank');
+              }}>
+                Download PRSM App
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="premium" size="lg">
@@ -62,15 +66,23 @@ const HeroSection = () => {
             </div>
           </div>
           
-          {/* Hero Image */}
+          {/* Mobile App Mockups */}
           <div className="animate-scale-in delay-300">
-            <div className="relative">
-              <img 
-                src={heroImage} 
-                alt="PRSM Scheduling Interface" 
-                className="w-full h-auto rounded-2xl shadow-elegant"
-              />
-              <div className="absolute inset-0 bg-gradient-primary opacity-20 rounded-2xl"></div>
+            <div className="flex justify-center gap-6">
+              <div className="relative">
+                <img 
+                  src={appMockup1} 
+                  alt="PRSM App - Natural Language Scheduling" 
+                  className="w-48 h-auto rounded-3xl shadow-elegant hover:scale-105 transition-all duration-300"
+                />
+              </div>
+              <div className="relative mt-8">
+                <img 
+                  src={appMockup2} 
+                  alt="PRSM App - Smart Calendar Management" 
+                  className="w-48 h-auto rounded-3xl shadow-elegant hover:scale-105 transition-all duration-300"
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -58,8 +58,10 @@ const CTASection = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button variant="hero" size="lg" className="group text-lg px-8 py-4">
-              Start Your Free Trial
+            <Button variant="hero" size="lg" className="group text-lg px-8 py-4" onClick={() => {
+              window.open('https://apps.apple.com/app/prsm', '_blank');
+            }}>
+              Download PRSM App
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button variant="premium" size="lg" className="text-lg px-8 py-4">

@@ -42,7 +42,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-gradient-secondary">
+    <section id="features" className="py-24 bg-gradient-secondary">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
