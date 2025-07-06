@@ -38,25 +38,25 @@ const problems = [
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Problems */}
           <div className="animate-fade-in delay-200">
-            <div className="bg-destructive/5 p-8 rounded-2xl border border-destructive/20">
+            <div className="bg-muted/30 p-8 rounded-2xl border border-border">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-destructive/10 rounded-full flex items-center justify-center">
-                  <X className="w-6 h-6 text-destructive" />
+                <div className="w-12 h-12 bg-muted/50 rounded-full flex items-center justify-center">
+                  <X className="w-6 h-6 text-muted-foreground" />
                 </div>
-                <h3 className="text-2xl font-bold">The Old Way</h3>
+                <h3 className="text-2xl font-bold text-muted-foreground">The Old Way</h3>
               </div>
               
               <div className="space-y-4">
                 {problems.map((problem, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <X className="w-5 h-5 text-destructive mt-0.5 flex-shrink-0" />
+                    <X className="w-5 h-5 text-muted-foreground/60 mt-0.5 flex-shrink-0" />
                     <span className="text-muted-foreground">{problem}</span>
                   </div>
                 ))}
               </div>
               
-              <div className="mt-8 p-4 bg-destructive/5 rounded-lg">
-                <p className="text-sm text-destructive font-medium">
+              <div className="mt-8 p-4 bg-muted/40 rounded-lg border border-border">
+                <p className="text-sm text-muted-foreground font-medium">
                   Result: Frustration, missed opportunities, wasted time
                 </p>
               </div>
