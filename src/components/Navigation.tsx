@@ -12,16 +12,18 @@ const Navigation = () => {
           
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors" onClick={(e) => {
-              e.preventDefault();
-              document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
+            <a href="/#features" className="text-muted-foreground hover:text-foreground transition-colors" onClick={(e) => {
+              if (window.location.pathname === '/') {
+                e.preventDefault();
+                document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
+              }
             }}>
               Features
             </a>
-            <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a href="/pricing" className="text-muted-foreground hover:text-foreground transition-colors">
               Pricing
             </a>
-            <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a href="/about" className="text-muted-foreground hover:text-foreground transition-colors">
               About
             </a>
           </div>
