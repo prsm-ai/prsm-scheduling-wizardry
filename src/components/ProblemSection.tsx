@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 import { X, ArrowRight, CheckCircle2 } from "lucide-react";
 
 const ProblemSection = () => {
-  const problems = [
+const problems = [
     "7+ back-and-forth emails to find a time",
     "Double-bookings and timezone disasters",
     "Lost context about why you're meeting",
@@ -57,7 +57,7 @@ const ProblemSection = () => {
               
               <div className="mt-8 p-4 bg-destructive/5 rounded-lg">
                 <p className="text-sm text-destructive font-medium">
-                  Result: Frustrated teams, missed opportunities, wasted time
+                  Result: Frustration, missed opportunities, wasted time
                 </p>
               </div>
             </div>
@@ -84,7 +84,7 @@ const ProblemSection = () => {
               
               <div className="mt-8 p-4 bg-primary/10 rounded-lg">
                 <p className="text-sm text-primary font-medium">
-                  Result: Happy teams, perfect meetings, 5+ hours saved weekly
+                  Result: Perfect meetings, 5+ hours saved weekly, stress-free scheduling
                 </p>
               </div>
             </div>
