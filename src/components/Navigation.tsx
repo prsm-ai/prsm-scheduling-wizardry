@@ -15,14 +15,22 @@ const Navigation = () => {
           
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href={location.pathname === '/' ? '#features' : '/#features'} className="text-muted-foreground hover:text-foreground transition-colors" onClick={(e) => {
-              if (location.pathname === '/' && e.currentTarget.getAttribute('href') === '#features') {
-                e.preventDefault();
-                document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
-              }
-            }}>
+            <Link 
+              to={location.pathname === '/' ? '#features' : '/'} 
+              className="text-muted-foreground hover:text-foreground transition-colors" 
+              onClick={(e) => {
+                if (location.pathname === '/') {
+                  e.preventDefault();
+                  document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  // Navigate to home and then scroll to features
+                  e.preventDefault();
+                  window.location.href = '/#features';
+                }
+              }}
+            >
               Features
-            </a>
+            </Link>
             <Link to="/pricing" className="text-muted-foreground hover:text-foreground transition-colors">
               Pricing
             </Link>
