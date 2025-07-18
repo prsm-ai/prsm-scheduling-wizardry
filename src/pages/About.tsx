@@ -6,7 +6,7 @@ const About = () => {
   const values = [
     {
       icon: Lightbulb,
-      title: "Innovation First-M",
+      title: "Innovation First",
       description:
         "We believe technology should make life easier, not more complicated. Every feature we build starts with the question: 'How can we make this magical?'",
     },

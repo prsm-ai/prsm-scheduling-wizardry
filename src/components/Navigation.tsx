@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Navigation = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-border">
@@ -19,13 +20,15 @@ const Navigation = () => {
               to={location.pathname === '/' ? '#features' : '/'} 
               className="text-muted-foreground hover:text-foreground transition-colors" 
               onClick={(e) => {
+                e.preventDefault();
                 if (location.pathname === '/') {
-                  e.preventDefault();
                   document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
                 } else {
                   // Navigate to home and then scroll to features
-                  e.preventDefault();
-                  window.location.href = '/#features';
+                  navigate('/');
+                  setTimeout(() => {
+                    document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
+                  }, 100);
                 }
               }}
             >
