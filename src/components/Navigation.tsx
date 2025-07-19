@@ -11,7 +11,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="font-bold text-2xl bg-gradient-primary bg-clip-text text-transparent">
-            PRSM
+            prsm
           </Link>
           
           {/* Navigation Links */}
@@ -33,13 +33,15 @@ const Navigation = () => {
               }}
             >
               Features
-            </Link>
+            </Link>     
+            {/* 
             <Link to="/pricing" className="text-muted-foreground hover:text-foreground transition-colors">
               Pricing
             </Link>
             <Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors">
               About
-            </Link>
+            </Link> 
+            */}
           </div>
           
           {/* CTA Buttons */}
