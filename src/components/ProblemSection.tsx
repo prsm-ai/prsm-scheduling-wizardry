@@ -4,6 +4,7 @@ import { X, ArrowRight, CheckCircle2 } from "lucide-react";
 
 const ProblemSection = () => {
 const problems = [
+    "You keep meaning to reach out—but never do",
     "7+ back-and-forth emails to find a time",
     "Double-bookings and timezone disasters",
     "Lost context about why you're meeting",
@@ -12,11 +13,12 @@ const problems = [
   ];
 
   const solutions = [
-    "One sentence. Done. 30 seconds total.",
+    "One sentence. Done. 30 seconds of your time.",
     "Smart conflict detection and alternatives",
     "Context-aware meeting preparation",
     "Intelligent reminders and follow-ups",
-    "Perfect briefings before every meeting"
+    "Perfect briefings before every meeting",
+    "Make time for the people who matter most"
   ];
 
   return (
@@ -30,7 +32,7 @@ const problems = [
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We've all been there. The endless email chains, the missed meetings, 
+            We've all been there. Never reaching out, the endless email chains, 
             the embarrassing double-bookings. There has to be a better way.
           </p>
         </div>
@@ -43,7 +45,7 @@ const problems = [
                 <div className="w-12 h-12 bg-muted/50 rounded-full flex items-center justify-center">
                   <X className="w-6 h-6 text-muted-foreground" />
                 </div>
-                <h3 className="text-2xl font-bold text-muted-foreground">The Old Way</h3>
+                <h3 className="text-2xl font-bold text-muted-foreground">The old way</h3>
               </div>
               
               <div className="space-y-4">
@@ -57,7 +59,7 @@ const problems = [
               
               <div className="mt-8 p-4 bg-muted/40 rounded-lg border border-border">
                 <p className="text-sm text-muted-foreground font-medium">
-                  Result: Frustration, missed opportunities, wasted time
+                  Result: Missed opportunities & wasted time
                 </p>
               </div>
             </div>
@@ -70,7 +72,7 @@ const problems = [
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                   <CheckCircle2 className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold">The PRSM Way</h3>
+                <h3 className="text-2xl font-bold">With prsm assistant</h3>
               </div>
               
               <div className="space-y-4">
@@ -84,7 +86,7 @@ const problems = [
               
               <div className="mt-8 p-4 bg-primary/10 rounded-lg">
                 <p className="text-sm text-primary font-medium">
-                  Result: Perfect meetings, 5+ hours saved weekly, stress-free scheduling
+                  Result: Easier than ever to stay connected 
                 </p>
               </div>
             </div>
@@ -94,7 +96,7 @@ const problems = [
         {/* CTA */}
         <div className="text-center mt-16 animate-fade-in delay-600">
           <Button variant="hero" size="lg" className="group">
-            Experience the Magic
+            Start Connecting Now
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>

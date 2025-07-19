@@ -5,7 +5,7 @@ const FeaturesSection = () => {
 const features = [
     {
       icon: MessageSquare,
-      title: "Natural Language Scheduling",
+      title: "Intelligent Scheduling",
       description: '"Schedule coffee with Kate next week" → Done. Your prsm assistant handles everything from finding the perfect time to sending beautifully crafted emails.',
       highlight: "30 seconds total"
     },
