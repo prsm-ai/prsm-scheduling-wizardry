@@ -5,20 +5,20 @@ const FeaturesSection = () => {
 const features = [
     {
       icon: MessageSquare,
-      title: "Natural Language Scheduling",
-      description: '"Schedule coffee with Kate next week" → Done. PRSM handles everything from finding the perfect time to sending beautifully crafted emails.',
+      title: "Intelligent Scheduling",
+      description: '"Schedule coffee with Kate next week" → Done. Your prsm assistant handles everything from finding the perfect time to sending beautifully crafted emails.',
       highlight: "30 seconds total"
     },
     {
       icon: Zap,
       title: "Perfect Conflict Resolution",
-      description: "Smart alternatives when conflicts arise. PRSM knows your preferences and suggests the best options instantly.",
+      description: "Smart alternatives when conflicts arise. Your prsm assistant knows your preferences and suggests the best options instantly.",
       highlight: "No more back-and-forth"
     },
     {
       icon: Brain,
       title: "Context-Aware Intelligence",
-      description: "PRSM remembers everything - Kate prefers mornings, David likes lunch meetings, your favorite coffee spots.",
+      description: "Your prsm assistant remembers everything - Kate prefers mornings, David likes lunch meetings, your favorite coffee spots.",
       highlight: "Learns your patterns"
     },
     {

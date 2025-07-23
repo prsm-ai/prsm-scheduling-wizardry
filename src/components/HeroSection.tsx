@@ -24,7 +24,7 @@ const HeroSection = () => {
             <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Turn{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                7 emails
+                8 emails
               </span>{" "}
               into{" "}
               <span className="bg-gradient-primary bg-clip-text text-transparent">
@@ -33,7 +33,7 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              PRSM is the world's most intelligent scheduling experience. 
+              prsm is an intelligent scheduling experience. 
               Just say "Schedule coffee with Kate" and watch the magic happen.
             </p>
             
@@ -41,7 +41,7 @@ const HeroSection = () => {
               <Button variant="hero" size="lg" className="group" onClick={() => {
                 window.open('https://apps.apple.com/app/prsm', '_blank');
               }}>
-                Download PRSM App
+                Download prsm now
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="premium" size="lg">
@@ -61,7 +61,7 @@ const HeroSection = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Zap className="w-4 h-4 text-primary" />
-                <span>&lt;2 min setup</span>
+                <span>&lt;3 min setup</span>
               </div>
             </div>
           </div>
@@ -72,14 +72,14 @@ const HeroSection = () => {
               <div className="relative">
                 <img 
                   src={appMockup1} 
-                  alt="PRSM App - Natural Language Scheduling" 
+                  alt="prsm App - Intelligent Scheduling" 
                   className="w-48 h-auto rounded-3xl shadow-elegant hover:scale-105 transition-all duration-300"
                 />
               </div>
               <div className="relative mt-8">
                 <img 
                   src={appMockup2} 
-                  alt="PRSM App - Smart Calendar Management" 
+                  alt="prsm App - Come Prepared" 
                   className="w-48 h-auto rounded-3xl shadow-elegant hover:scale-105 transition-all duration-300"
                 />
               </div>

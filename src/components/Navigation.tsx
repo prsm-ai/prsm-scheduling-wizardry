@@ -11,10 +11,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="font-bold text-2xl bg-gradient-primary bg-clip-text text-transparent">
-            PRSM
+            prsm
           </Link>
           
           {/* Navigation Links */}
+          {/*
           <div className="hidden md:flex items-center space-x-8">
             <Link 
               to={location.pathname === '/' ? '#features' : '/'} 
@@ -41,12 +42,10 @@ const Navigation = () => {
               About
             </Link>
           </div>
+          */}
           
           {/* CTA Buttons */}
           <div className="flex items-center gap-3">
-            <Button variant="ghost" size="sm">
-              Sign In
-            </Button>
             <Button variant="hero" size="sm">
               Get Started
             </Button>

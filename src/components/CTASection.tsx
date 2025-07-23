@@ -19,8 +19,9 @@ const CTASection = () => {
           </h2>
           
           <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
-            Join thousands of professionals who've already transformed their scheduling experience. 
-            Start your free trial today and see why PRSM feels like having a genius assistant.
+          Skip the back-and-forth of scheduling and focus on what truly matters—building meaningful 
+          connections. With everything from finding the perfect time to meet, to prepping you with 
+          key insights, and ensuring follow-ups are never missed, it's easier than ever to stay connected.
           </p>
           
           {/* Benefits */}
@@ -61,11 +62,11 @@ const CTASection = () => {
             <Button variant="hero" size="lg" className="group text-lg px-8 py-4" onClick={() => {
               window.open('https://apps.apple.com/app/prsm', '_blank');
             }}>
-              Download PRSM App
+              Download prsm now
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button variant="premium" size="lg" className="text-lg px-8 py-4">
-              Schedule a Demo
+              Schedule a demo
             </Button>
           </div>
           
