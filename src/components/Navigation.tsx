@@ -15,6 +15,7 @@ const Navigation = () => {
           </Link>
           
           {/* Navigation Links */}
+          {/*
           <div className="hidden md:flex items-center space-x-8">
             <Link 
               to={location.pathname === '/' ? '#features' : '/'} 
@@ -33,22 +34,18 @@ const Navigation = () => {
               }}
             >
               Features
-            </Link>     
-            {/* 
+            </Link>
             <Link to="/pricing" className="text-muted-foreground hover:text-foreground transition-colors">
               Pricing
             </Link>
             <Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors">
               About
-            </Link> 
-            */}
+            </Link>
           </div>
+          */}
           
           {/* CTA Buttons */}
           <div className="flex items-center gap-3">
-            <Button variant="ghost" size="sm">
-              Sign In
-            </Button>
             <Button variant="hero" size="sm">
               Get Started
             </Button>
